@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <!--  <Spinner
+        android:id="@+id/toolbar_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:showAsAction="never"/>-->
+
+
+    <item  android:id="@+id/action_FiltrarTodos"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never" android:title="Mostrar Todos"/>
+
+  <item android:id="@+id/action_volver"
+      android:icon="@drawable/iconfinder_flecha_izquierda"
+      android:title="Volver a pantalla anterior"
+      app:showAsAction="always|collapseActionView"
+      />
+
+  <item android:id="@+id/action_FiltrarHechos"
+        app:showAsAction="never"
+        android:title="Mostrar hechos"/>
+
+    <item android:id="@+id/action_FiltrarPendientes"
+        app:showAsAction="never"
+        android:title="Mostrar Pendientes"/>
+
+
+    <item android:id="@+id/action_searchActividades"
+        android:icon="@drawable/ic_search"
+        android:title="Buscar por Patente"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+
+    <item android:id="@+id/action_nueva_actividad"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/nueva_actividad"
+        android:title="Nueva Actividad"/>
+
+    <item android:id="@+id/action_logOut"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_exit"
+        android:title="LogOut"/>
+
+
+
+</menu>

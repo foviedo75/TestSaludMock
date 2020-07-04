@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AutosActivity">
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshAutos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--OJOOOOO android:layout_marginTop="140dp" NO BAJARLO PORQUE SI NO SE PIERDE EL PRIMER ITEM-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListaAutos"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:background="@android:color/holo_red_dark"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarAutos"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewListaAutos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUserLogueado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Usuario"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewListaAutos"
+        app:layout_constraintEnd_toStartOf="@+id/progressBarAutos"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>

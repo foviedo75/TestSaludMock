@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Fragment.FragmentDerechoLavado">
+
+    <RadioGroup
+        android:id="@+id/radioGroupLavadores2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/holo_blue_dark">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonMauro2"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:checked="true"
+            android:text="Mauro"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPablo2"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Pablo"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLuis2"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Luis"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOtro2"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Otro"
+            android:textAlignment="textStart"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LAVADOR:"
+        android:textColor="@color/common_signin_btn_dark_text_default"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="15sp"
+    android:id="@+id/flottingBTNGrabarLavado"
+    android:src="@drawable/load_upload"/>
+
+</FrameLayout>
